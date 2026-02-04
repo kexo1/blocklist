@@ -24,11 +24,8 @@ reddit.com##details[open] > faceplate-auto-height-animator
 reddit.com##faceplate-switch-input[aria-label="Show mature content (I'm over 18)"]
 
 ! ChatGPT
-! Remove upgrade plan button
-chatgpt.com##.__menu-item-trailing-btn.-my-1\.5
 chatgpt.com##div[class*="flex flex-col py-2 empty:hidden dark:border-white/20"]
 chatgpt.com##.hidden.lg\:block > .inline-flex.items-center.gap-1.rounded-full.text-sm.font-medium.py-2.bg-\[\#F1F1FB\].text-\[\#5D5BD0\].hover\:bg-\[\#E4E4F6\].dark\:bg-\[\#373669\].dark\:text-\[\#DCDBF6\].dark\:hover\:bg-\[\#414071\]
-chatgpt.com##.px-3\.5.pt-1.pb-3
 
 ! Perplexity
 ! Remove voice button
