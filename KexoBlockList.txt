@@ -24,7 +24,10 @@ reddit.com##details[open] > faceplate-auto-height-animator
 reddit.com##faceplate-switch-input[aria-label="Show mature content (I'm over 18)"]
 
 ! ChatGPT
-
+! Remove upgrade to plus buttons
+chatgpt.com##.hidden.lg\:block
+chatgpt.com##.__menu-item-trailing-btn.cursor-default.-my-1\.5.-ms-2.-me-2\.5.py-1\.5.ps-2.pe-2\.5
+chatgpt.com###radix-_R_3jbtd33ih6kcm_
 
 ! Perplexity
 ! Remove voice button
