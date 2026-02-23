@@ -67,23 +67,21 @@ mail.proton.me##.button-promotion--bf-2025-wave2
 
 ! Youtube
 ! Hide buttons below search
-www.youtube.com###flexible-item-buttons > *:has([aria-label="Clip"])
-www.youtube.com###flexible-item-buttons > *:has([aria-label="Download"])
-www.youtube.com###flexible-item-buttons > *:has([aria-label="Thanks"])
+youtube.com###flexible-item-buttons > *:has([aria-label="Clip"])
+youtube.com###flexible-item-buttons > *:has([aria-label="Download"])
+youtube.com###flexible-item-buttons > *:has([aria-label="Thanks"])
 ! Hide buttons below search
-youtube.com##ytd-browse[page-subtype="home"] ytd-feed-filter-chip-bar-renderer:style(display: none !important)
+! youtube.com##ytd-browse[page-subtype="home"] ytd-feed-filter-chip-bar-renderer:style(display: none !important)
 ! Hide voice search button
-www.youtube.com##div#voice-search-button
+youtube.com##div#voice-search-button
 ! Hide autoplay toggle
-www.youtube.com##button[data-tooltip-target-id="ytp-autonav-toggle-button"]
+youtube.com##button[data-tooltip-target-id="ytp-autonav-toggle-button"]
 ! Remove youtube footer
-www.youtube.com##div#footer
+youtube.com##div#footer
 ! YT Home - No Infinite Scroll
-www.youtube.com##ytd-browse[page-subtype="home"] ytd-continuation-item-renderer:remove()
-! Remove membership only videos
-youtube.com##.badge-style-type-members-only:upward(ytd-rich-item-renderer)
+youtube.com##ytd-browse[page-subtype="home"] ytd-continuation-item-renderer:remove()
 ! Hide blank spaces in youtube recommendation
-! youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
 
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [Adblock Plus 2.0]
