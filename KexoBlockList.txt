@@ -84,7 +84,6 @@ www.youtube.com#@#tp-yt-paper-item:has(yt-icon):has(yt-formatted-string:has-text
 www.youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label="Save to playlist"])
 m.youtube.com#@#button-view-model:has(button[aria-label="Save to playlist"])
 ! Clip button
-! clip button
 www.youtube.com#@#ytd-button-renderer:has(a:has(> yt-formatted-string:has-text(Clip)))
 www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button[aria-label=Clip]))
 youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label=Clip])
