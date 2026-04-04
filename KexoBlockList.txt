@@ -66,19 +66,31 @@ sktorrent.eu###mini-notification
 mail.proton.me##.button-promotion--bf-2025-wave2
 
 ! Youtube
-! Hide buttons below search
-youtube.com###flexible-item-buttons > *:has([aria-label="Clip"])
-youtube.com###flexible-item-buttons > *:has([aria-label="Download"])
-youtube.com###flexible-item-buttons > *:has([aria-label="Thanks"])
-! Hide buttons below search
-! youtube.com##ytd-browse[page-subtype="home"] ytd-feed-filter-chip-bar-renderer:style(display: none !important)
-! Hide voice search button
-youtube.com##div#voice-search-button
-! Hide autoplay toggle
-youtube.com##button[data-tooltip-target-id="ytp-autonav-toggle-button"]
 ! Remove youtube footer
 youtube.com##div#footer
 ! YT Home - No Infinite Scroll
-youtube.com##ytd-browse[page-subtype="home"] ytd-continuation-item-renderer:remove()
+! youtube.com##ytd-browse[page-subtype="home"] ytd-continuation-item-renderer:remove()
 ! Hide blank spaces in youtube recommendation
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
+! Allow List
+! Allow share button
+www.youtube.com#@#ytd-button-renderer:has(>a:has(> yt-formatted-string:has-text(Share)))
+www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button[aria-label=Share]))
+www.youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label=Share])
+m.youtube.com#@#button-view-model:has(button[aria-label="Share"])
+! Allow save button
+www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button:has-text(Save)):has(yt-icon))
+www.youtube.com#@#tp-yt-paper-item:has(yt-icon):has(yt-formatted-string:has-text(Save))
+www.youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label="Save to playlist"])
+m.youtube.com#@#button-view-model:has(button[aria-label="Save to playlist"])
+! Clip button
+! clip button
+www.youtube.com#@#ytd-button-renderer:has(a:has(> yt-formatted-string:has-text(Clip)))
+www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button[aria-label=Clip]))
+youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label=Clip])
+www.youtube.com#@#ytd-menu-service-item-renderer:has(>tp-yt-paper-item:has(>yt-formatted-string:has-text(Clip)))
+! Allow translate button
+youtube.com#@#.translate-button[state="untoggled"]
+! Allow community posts
+www.youtube.com#@#ytd-rich-shelf-renderer:has(ytd-rich-item-renderer[is-post])
+www.youtube.com#@#ytd-item-section-renderer:has(a[href$="/posts"])
