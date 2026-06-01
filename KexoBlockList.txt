@@ -27,19 +27,6 @@ reddit.com##faceplate-switch-input[aria-label="Show mature content (I'm over 18)
 ! Remove upgrade buttons
 chatgpt.com##button[aria-label="Upgrade"]
 
-! Perplexity
-! Remove voice button
-www.perplexity.ai##.reset.interactable.select-none.\[-webkit-user-drag\:none\].outline-none.font-semimedium.duration-300.ease-out.font-sans.text-center.items-center.justify-center.leading-loose.whitespace-nowrap.bg-super.border.border-transparent.text-inverse.h-8.text-sm.cursor-pointer.origin-center.active\:scale-\[0\.97\].active\:duration-150.active\:ease-outExpo.inline-flex.aspect-\[9\/8\].hover\:opacity-80.rounded-lg
-! Remove finance, more and discover buttons
-www.perplexity.ai##a.reset.interactable-alt.p-sm.gap-two.group.flex.w-full.flex-col.items-center.justify-center.rounded-lg:nth-of-type(4)
-www.perplexity.ai##a.reset.interactable-alt.p-sm.gap-two.group.flex.w-full.flex-col.items-center.justify-center.rounded-lg:nth-of-type(2)
-www.perplexity.ai##button.reset.interactable-alt.p-sm.gap-two.group.flex.w-full.flex-col.items-center.justify-center.rounded-lg
-! Remove upgrade and download buttons
-www.perplexity.ai##.gap-xs.flex.flex-col.items-center.\[\@media\(max-height\:680px\)\]\:hidden
-www.perplexity.ai##.gap-xs.group.inline-flex.appearance-none.flex-col.items-center.\[\@media\(max-height\:680px\)\]\:hidden
-! Remove comet button
-www.perplexity.ai##.reset.interactable.select-none.\[-webkit-user-drag\:none\].outline-none.font-semimedium.duration-300.ease-out.font-sans.text-center.items-center.justify-center.leading-loose.whitespace-nowrap.bg-super.border.border-transparent.text-inverse.h-8.text-sm.cursor-pointer.origin-center.active\:scale-\[0\.97\].active\:duration-150.active\:ease-outExpo.inline-flex.hover\:opacity-80.px-3.rounded-lg.relative
-
 ! Twitch
 www.twitch.tv##div.Layout-sc-1xcs6mc-0.VxLcr:nth-of-type(6) > div.Layout-sc-1xcs6mc-0:nth-of-type(1) > div.Layout-sc-1xcs6mc-0:nth-of-type(1) > .InjectLayout-sc-1i43xsx-0.iDMNUO > .Layout-sc-1xcs6mc-0.kOoFSj
 www.twitch.tv##.Layout-sc-1xcs6mc-0.ihSefD > .InjectLayout-sc-1i43xsx-0.iDMNUO > div.Layout-sc-1xcs6mc-0:nth-of-type(1) > .Layout-sc-1xcs6mc-0.fHdBNk
@@ -72,7 +59,6 @@ youtube.com##div#footer
 ! youtube.com##ytd-browse[page-subtype="home"] ytd-continuation-item-renderer:remove()
 ! Hide blank spaces in youtube recommendation
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
-! Allow List
 ! Allow share button
 www.youtube.com#@#ytd-button-renderer:has(>a:has(> yt-formatted-string:has-text(Share)))
 www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button[aria-label=Share]))
@@ -93,3 +79,16 @@ youtube.com#@#.translate-button[state="untoggled"]
 ! Allow community posts
 www.youtube.com#@#ytd-rich-shelf-renderer:has(ytd-rich-item-renderer[is-post])
 www.youtube.com#@#ytd-item-section-renderer:has(a[href$="/posts"])
+
+! DuckDuckGo
+! Allow Duck.ai
+duckduckgo.com#@#.chip-select_option__Gh6br:has(> span[title="Duck.ai"])
+duckduckgo.com#@#[data-react-module-id="duckDuckGoHelp"]
+duckduckgo.com#@#[data-ssg-id="ask-duck-ai-submit"]
+duckduckgo.com#@#[data-testid="aichat-button"]
+duckduckgo.com#@#a[class][href*="ia=chat"]
+duckduckgo.com#@#a[href^="/?ia=chat&"]
+duckduckgo.com#@#a[href^="https://duckduckgo.com/?ia=chat"]
+duckduckgo.com#@#button[title="Ask Duck.ai"][data-ssg-id="ai-searchbox-chat-submit"]
+duckduckgo.com#@?#.chip-select_isSelected__RpaRr:has-text(Duck.ai)
+duckduckgo.com#@?##react-duckbar li:has-text(Search Assist)
