@@ -69,7 +69,7 @@ www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button:has-text
 www.youtube.com#@#tp-yt-paper-item:has(yt-icon):has(yt-formatted-string:has-text(Save))
 www.youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label="Save to playlist"])
 m.youtube.com#@#button-view-model:has(button[aria-label="Save to playlist"])
-! Clip button
+! Allow Clip button
 www.youtube.com#@#ytd-button-renderer:has(a:has(> yt-formatted-string:has-text(Clip)))
 www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button[aria-label=Clip]))
 youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label=Clip])
@@ -81,6 +81,7 @@ www.youtube.com#@#ytd-rich-shelf-renderer:has(ytd-rich-item-renderer[is-post])
 www.youtube.com#@#ytd-item-section-renderer:has(a[href$="/posts"])
 ! Remove YT Live chat
 youtube.com##ytd-live-chat-frame
+youtube.com##panels-full-bleed-container
 
 ! DuckDuckGo
 ! Allow Duck.ai
