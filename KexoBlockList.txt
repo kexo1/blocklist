@@ -79,6 +79,8 @@ youtube.com#@#.translate-button[state="untoggled"]
 ! Allow community posts
 www.youtube.com#@#ytd-rich-shelf-renderer:has(ytd-rich-item-renderer[is-post])
 www.youtube.com#@#ytd-item-section-renderer:has(a[href$="/posts"])
+! Remove YT Live chat
+youtube.com##ytd-live-chat-frame
 
 ! DuckDuckGo
 ! Allow Duck.ai
