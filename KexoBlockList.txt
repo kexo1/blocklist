@@ -95,3 +95,7 @@ duckduckgo.com#@#a[href^="https://duckduckgo.com/?ia=chat"]
 duckduckgo.com#@#button[title="Ask Duck.ai"][data-ssg-id="ai-searchbox-chat-submit"]
 duckduckgo.com#@?#.chip-select_isSelected__RpaRr:has-text(Duck.ai)
 duckduckgo.com#@?##react-duckbar li:has-text(Search Assist)
+
+! Thunderstore
+||thunderstore.io/cyberstorm-static/images/valheim_1_*0.webp$image
+thunderstore.io##.community-promo--bar.community-promo.link
