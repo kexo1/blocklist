@@ -5,35 +5,13 @@
 
 ! Instagram
 ! Remove distractions
-instagram.com##a[href="/reels/"]
-instagram.com##a[href="/explore/"]
 instagram.com##a[href^="https://www.threads.net/"]:has(svg[viewBox="0 0 192 192"])
 instagram.com##span:has-text(Create)
 instagram.com##span:has-text(Also from Meta)
 
 
-! Reddit
-! Remove unnecesary buttons and sidebar
-reddit.com##a#advertise-button
-reddit.com##reddit-recent-pages
-reddit.com##.left-sidebar
-! Remove trending search
-reddit.com###reddit-trending-searches-partial-container
-reddit.com##ml-md mt-sm mb-2xs text-neutral-content-weak flex items-center
-reddit.com##ml-md mt-sm mb-2xs text-neutral-content-weak flex items-center hidden
-! Remove NSFW search results
-reddit.com##details[open] > summary:has(span.text-neutral-content-weak.font-semibold.text-12:contains("NSFW"))
-reddit.com##details[open] > faceplate-auto-height-animator
-reddit.com##faceplate-switch-input[aria-label="Show mature content (I'm over 18)"]
-
-
-! FreeTP
-! Remove Ads
-freetp.org###news-id-5119 > p:nth-of-type(5) > strong > [href*="https://yourlnk.ru/r/32171/"] > [src*="/download-yb.png"]
-
-
 ! Youtube
-! YT Home - No Infinite Scroll
+! Home - No Infinite Scroll
 ! youtube.com##ytd-browse[page-subtype="home"] ytd-continuation-item-renderer:remove()
 ! Hide blank spaces in youtube recommendation
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
@@ -42,7 +20,7 @@ www.youtube.com#@#ytd-button-renderer:has(>a:has(> yt-formatted-string:has-text(
 www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button[aria-label=Share]))
 www.youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label=Share])
 m.youtube.com#@#button-view-model:has(button[aria-label="Share"])
-! Allow save button
+! 2026-05: Restore save button
 www.youtube.com#@#ytd-button-renderer:has(>yt-button-shape:has(> button:has-text(Save)):has(yt-icon))
 www.youtube.com#@#tp-yt-paper-item:has(yt-icon):has(yt-formatted-string:has-text(Save))
 www.youtube.com#@#yt-button-view-model:has(>button-view-model> button[aria-label="Save to playlist"])
@@ -60,7 +38,7 @@ www.youtube.com#@#ytd-item-section-renderer:has(a[href$="/posts"])
 ! Remove YT Live chat
 youtube.com##ytd-live-chat-frame
 youtube.com##ytd-watch-flexy #panels-full-bleed-container
-! Remove recommended videos next to player
+! 2026-09: Remove recommended videos next to player
 www.youtube.com##ytd-watch-next-secondary-results-renderer
 www.youtube.com##.ytp-endscreen-content
 www.youtube.com##.ytp-ce-element
@@ -68,6 +46,11 @@ www.youtube.com##ytd-watch-flexy #secondary
 
 
 ! Thunderstore
-! Remove  Ads
+! 2026-08: Remove  Ads
 ||thunderstore.io/cyberstorm-static/images/valheim_1_*0.webp$image
 thunderstore.io##.community-promo--bar.community-promo.link
+
+
+! FreeTP
+! Remove Ads
+freetp.org###news-id-5119 > p:nth-of-type(5) > strong > [href*="https://yourlnk.ru/r/32171/"] > [src*="/download-yb.png"]
