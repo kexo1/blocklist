@@ -5,6 +5,8 @@
 
 ! Instagram
 ! Remove distractions
+instagram.com##a[href="/reels/"]
+instagram.com##a[href="/explore/"]
 instagram.com##a[href^="https://www.threads.net/"]:has(svg[viewBox="0 0 192 192"])
 instagram.com##span:has-text(Create)
 instagram.com##span:has-text(Also from Meta)
