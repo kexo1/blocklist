@@ -2,12 +2,15 @@
 ! Description: Cleans clutter/garbage from websites
 ! Homepage: https://github.com/kexo1/KexoBlockList
 
+
 ! Instagram
+! Remove distractions
 instagram.com##a[href="/reels/"]
 instagram.com##a[href="/explore/"]
 instagram.com##a[href^="https://www.threads.net/"]:has(svg[viewBox="0 0 192 192"])
 instagram.com##span:has-text(Create)
 instagram.com##span:has-text(Also from Meta)
+
 
 ! Reddit
 ! Remove unnecesary buttons and sidebar
@@ -23,38 +26,13 @@ reddit.com##details[open] > summary:has(span.text-neutral-content-weak.font-semi
 reddit.com##details[open] > faceplate-auto-height-animator
 reddit.com##faceplate-switch-input[aria-label="Show mature content (I'm over 18)"]
 
-! ChatGPT
-! Remove upgrade buttons
-chatgpt.com##button[aria-label="Upgrade"]
-
-! Twitch
-www.twitch.tv##div.Layout-sc-1xcs6mc-0.VxLcr:nth-of-type(6) > div.Layout-sc-1xcs6mc-0:nth-of-type(1) > div.Layout-sc-1xcs6mc-0:nth-of-type(1) > .InjectLayout-sc-1i43xsx-0.iDMNUO > .Layout-sc-1xcs6mc-0.kOoFSj
-www.twitch.tv##.Layout-sc-1xcs6mc-0.ihSefD > .InjectLayout-sc-1i43xsx-0.iDMNUO > div.Layout-sc-1xcs6mc-0:nth-of-type(1) > .Layout-sc-1xcs6mc-0.fHdBNk
-www.twitch.tv##.Layout-sc-1xcs6mc-0.iGMbNn.storiesLeftNavSection--csO9S > button
-www.twitch.tv##div.Layout-sc-1xcs6mc-0.iGMbNn.side-nav-section:nth-of-type(4)
 
 ! FreeTP
-! Remove ADS
+! Remove Ads
 freetp.org###news-id-5119 > p:nth-of-type(5) > strong > [href*="https://yourlnk.ru/r/32171/"] > [src*="/download-yb.png"]
 
-! Game3rb
-! Remove fake download buttons
-game3rb.com##.post-body.entry-content > div:nth-of-type(1) > center > .buttonPress-640 > button
-game3rb.com##.post-body.entry-content > center:nth-of-type(1) > .buttonPress-640 > button:nth-of-type(1)
-game3rb.com##.post-body.entry-content > div:nth-of-type(1) > center
-game3rb.com##.post-body.entry-content > center:nth-of-type(1)
-game3rb.com##button:nth-of-type(2)
-
-! SkTorrent
-sktorrent.eu###mini-notification
-
-! Proton Mail
-! Remove offers
-mail.proton.me##.button-promotion--bf-2025-wave2
 
 ! Youtube
-! Remove youtube footer
-youtube.com##div#footer
 ! YT Home - No Infinite Scroll
 ! youtube.com##ytd-browse[page-subtype="home"] ytd-continuation-item-renderer:remove()
 ! Hide blank spaces in youtube recommendation
@@ -82,20 +60,14 @@ www.youtube.com#@#ytd-item-section-renderer:has(a[href$="/posts"])
 ! Remove YT Live chat
 youtube.com##ytd-live-chat-frame
 youtube.com##ytd-watch-flexy #panels-full-bleed-container
+! Remove recommended videos next to player
+www.youtube.com##ytd-watch-next-secondary-results-renderer
+www.youtube.com##.ytp-endscreen-content
+www.youtube.com##.ytp-ce-element
+www.youtube.com##ytd-watch-flexy #secondary
 
-! DuckDuckGo
-! Allow Duck.ai
-duckduckgo.com#@#.chip-select_option__Gh6br:has(> span[title="Duck.ai"])
-duckduckgo.com#@#[data-react-module-id="duckDuckGoHelp"]
-duckduckgo.com#@#[data-ssg-id="ask-duck-ai-submit"]
-duckduckgo.com#@#[data-testid="aichat-button"]
-duckduckgo.com#@#a[class][href*="ia=chat"]
-duckduckgo.com#@#a[href^="/?ia=chat&"]
-duckduckgo.com#@#a[href^="https://duckduckgo.com/?ia=chat"]
-duckduckgo.com#@#button[title="Ask Duck.ai"][data-ssg-id="ai-searchbox-chat-submit"]
-duckduckgo.com#@?#.chip-select_isSelected__RpaRr:has-text(Duck.ai)
-duckduckgo.com#@?##react-duckbar li:has-text(Search Assist)
 
 ! Thunderstore
+! Remove  Ads
 ||thunderstore.io/cyberstorm-static/images/valheim_1_*0.webp$image
 thunderstore.io##.community-promo--bar.community-promo.link
