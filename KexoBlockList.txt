@@ -55,3 +55,13 @@ thunderstore.io##.community-promo--bar.community-promo.link
 ! FreeTP
 ! Remove Ads
 freetp.org###news-id-5119 > p:nth-of-type(5) > strong > [href*="https://yourlnk.ru/r/32171/"] > [src*="/download-yb.png"]
+
+! === GTA 6 SPOILER BLOCKER ===
+! Blocks videos matching GTA 6 titles on Home, Search, Recommendations, and Shorts
+www.youtube.com##:is(ytd-rich-item-renderer, ytd-video-renderer, ytd-compact-video-renderer, ytd-grid-video-renderer, yt-lockup-view-model):has(#video-title, h3, [id="video-title-link"]):has-text(/gta\s*[-_]?\s*(6|vi)|grand\s*theft\s*auto\s*[-_]?\s*(6|vi)/i)
+
+! Blocks GTA 6 character names, locations, and general leaks/spoilers
+www.youtube.com##:is(ytd-rich-item-renderer, ytd-video-renderer, ytd-compact-video-renderer, ytd-grid-video-renderer, yt-lockup-view-model):has(#video-title, h3, [id="video-title-link"]):has-text(/jason\s+duval|lucia\s+caminos|cal\s+hampton|brian\s+heder|lori\s+heder|boobie\s+ike|dre\'?quan\s+priest|real\s+dimez|bae-?luxe|roxy\s+gta|raul\s+bautista|leonida|port\s+gellhorn|grassrivers|ambrosia\s+gta|mount\s+kalaga/i)
+
+! Blocks broad spoiler patterns (Ending leaked, Plot twist, Post credits, etc.)
+www.youtube.com##:is(ytd-rich-item-renderer, ytd-video-renderer, ytd-compact-video-renderer, ytd-grid-video-renderer, yt-lockup-view-model):has(#video-title, h3, [id="video-title-link"]):has-text(/(ending|story|plot|cutscene|boss|character)\s+(leak|leaked|explained|revealed|twist|death|deaths)|massive\s+leak|huge\s+spoiler|post-?credits|final\s+boss/i)
